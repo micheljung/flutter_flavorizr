@@ -46,6 +46,7 @@ class ShellProcessor extends AbstractProcessor<void> {
       _path,
       _args,
       workingDirectory: workingDirectory,
+      runInShell: true,
     );
     if (result.exitCode != 0) {
       throw Exception(result.stderr);
